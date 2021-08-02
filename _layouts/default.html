@@ -3,7 +3,7 @@
   <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>BE 262  - {{ page.title }}</title>
+      <title>{{ page.title }}</title>
       <meta name="viewport" content="width=device-width">
 å
       <!-- syntax highlighting CSS -->
@@ -28,16 +28,12 @@
         </div>
         <div class="posts">
           <ul class="posts-list">
-            {% for tag in site.tags %}
-              {% if tag[0] == page.year %}
-                {% for post in tag[1] %}
-                  <li class="post-link">
-                    <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
-                      {{ post.title }}
-                    </a>
-                  </li>
-                {% endfor %}
-              {% endif %}
+            {% for post in site.posts %}
+              <li class="post-link">
+                <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
+                  {{ post.title }}
+                </a>
+              </li>
             {% endfor %}
           </ul>
         </div>
