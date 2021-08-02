@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Publications
-cover: papers.jpg
+cover: catalina.jpg
 categories: posts
 permalink: publications
 ---
