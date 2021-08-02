@@ -3,7 +3,13 @@ layout: default
 title: Home
 year: 2020
 ---
-
+{% for tag in site.tags %}
+  {% if tag[0] == year %}
+    {% assign t = tag | first %}
+    {% assign posts = tag | last %}
+    {% break %}
+    {% endif %}
+{% endfor %}
 {% assign page = site.posts.first %}
 {% assign content = page.content %}
 {% include post.html %} -->
