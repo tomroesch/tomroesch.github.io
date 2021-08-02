@@ -29,7 +29,7 @@
         <div class="posts">
           <ul class="posts-list">
             {% for post in site.posts %}
-              {% if site.class == "2020" %}
+              {% if post.class == "2020" %}
                 <li class="post-link">
                   <a class="post-title" href="{{ site.baseurl }}/{{ post.url }}">
                     {{ post.title }}
