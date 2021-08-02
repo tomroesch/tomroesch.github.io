@@ -7,9 +7,10 @@ year: 2020
   {% if tag[0] == year %}
     {% assign t = tag | first %}
     {% assign posts = tag | last %}
+    {% assign page = posts.first %}
     {% break %}
     {% endif %}
 {% endfor %}
-{% assign page = posts.first %}
+
 {% assign content = page.content %}
 {% include post.html %} -->
