@@ -28,12 +28,16 @@
         </div>
         <div class="posts">
           <ul class="posts-list">
-            {% for post in site.categories.2021 %}
-              <li class="post-link">
-                <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
-                  {{ post.title }}
-                </a>
-              </li>
+            {% for tag in site.tags %}
+              {% if tag[0] == "2021" %}
+                {% for post in tag[1] %}
+                  <li class="post-link">
+                    <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
+                      {{ post.title }}
+                    </a>
+                  </li>
+                {% endfor %}
+              {% endif %}
             {% endfor %}
           </ul>
         </div>
