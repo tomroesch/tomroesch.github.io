@@ -1,1 +1,1 @@
-# My poor try at a website
+# My poor attempt at a website
