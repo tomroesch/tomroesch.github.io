@@ -12,4 +12,4 @@ permalink: publications
 
 ## Testing links
 
-<a download href="http://rpdata.caltech.edu/courses/bootcamp2021/test_notebooks/Untitled5.ipynb"> Clicking on this link will force download the file</a>
+<a href="https://colab.research.google.com/drive/1BwfPhPqs-8ETteA1kWZvDh-gLhGe8U5o#scrollTo=usEVRj6jjyE9" target="_blank"> just work</a>
